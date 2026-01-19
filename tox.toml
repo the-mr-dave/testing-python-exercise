@@ -1,0 +1,12 @@
+[tox]
+env_list = ["pytest"]
+
+[env_common]
+# Common settings to avoid repetition
+base_python = ["python3.9"]
+deps = ["-rrequirements.txt"]
+
+[env.pytest_env]
+description = "Run tests using pytest"
+deps = ["-rrequirements.txt"]
+commands = [["pytest"]]
